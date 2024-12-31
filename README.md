@@ -1,4 +1,8 @@
 # BadApple
+
+## does this work for me
+if you don't have disk layout v3(boards made after 2021), you cant do this exploit because you have no internet recovery option because disk layout v2 and below has no miniOS
+
 ## how to do badapple
 1. enter developer mode with ESC+REFRESH+POWER and CTRL+D
 2. when you reach the block screen, press ESC+REFRESH+POWER again
