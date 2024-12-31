@@ -18,4 +18,4 @@ because of googles oversight, we have a shell in the VT3 whilst enrolled.
 <https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/platform2/minios/ramfs/etc/init/debug-tty.conf;drc=a344af8a24700b3395cbaec1ab9b914f5b3d5b85;l=18>
 
 ## things to do for badapple
-- make a payload script we can load onto a USB stick
+- make a payload script we can load onto a USB stick, then mount in the shell and run the script, e.g. `mkdir /mnt/BadApple && mount /dev/sda1 /mnt/Badapple && /mnt/BadApple/start.sh`
