@@ -1,4 +1,4 @@
-# BadApple
+# BadApple (patched kv5 TBC)
 
 ## what does this do??
 this is code execution in developer mode in recovery mode. this basically is an exploit that has the same capabilities as SH1mmer, except that the TPM is disabled. why? refer to this: <https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/platform/depthcharge/src/vboot/load_kernel.c;drc=081580ab61e5b5d4df9389bfe3f9f8891a950c9a;l=116>
