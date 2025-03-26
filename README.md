@@ -1,5 +1,11 @@
 # BadApple
 
+## what does this do??
+this is code execution in developer mode in recovery mode. this basically is an exploit that has the same capabilities as SH1mmer, except that the TPM is disabled. why? refer to this: <https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/platform/depthcharge/src/vboot/load_kernel.c;drc=081580ab61e5b5d4df9389bfe3f9f8891a950c9a;l=116>
+
+## erm, i have SH1mmer, this is useless 🤓
+this exploit is only intended for boards that have been keyrolled. e.g. nissa, dedede.
+
 ## does this work for me
 if you don't have disk layout v3(boards made after 2021), you cant do this exploit because you have no internet recovery option because disk layout v2 and below has no miniOS
 
