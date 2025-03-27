@@ -1,25 +1,31 @@
 # BadApple
-patched around kv4 or something idk
+Patched somewhere around KV4
+skid friendly explanation: this allows you to run cryptosmite, icarus and daub on your keyrolled device. It allows for pencil method too.
 
-kid friendly explanation: this allows you to run cryptosmite, icarus and daub on your keyrolled device. allows for pencil method too.
 ## what does this do??
-this is code execution in developer mode in recovery mode. this basically is an exploit that has the same capabilities as SH1mmer, except that the TPM is disabled. why? refer to this: <https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/platform/depthcharge/src/vboot/load_kernel.c;drc=081580ab61e5b5d4df9389bfe3f9f8891a950c9a;l=116>
+Badapple is code execution in developer mode in recovery mode. This is basically an exploit that has the same capabilities as Sh1mmer, except that the TPM is disabled.
 
-## erm, i have SH1mmer, this is useless :nerd:
-this exploit is only intended for boards that have been keyrolled. e.g. nissa.
+why? 
 
-## does this work for me
-if you don't have disk layout v3(boards made after 2021), you cant do this exploit because you have no internet recovery option because disk layout v2 and below has no miniOS
+refer to this: <https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/platform/depthcharge/src/vboot/load_kernel.c;drc=081580ab61e5b5d4df9389bfe3f9f8891a950c9a;l=116>
+
+## I have Sh1mmer, this is useless
+this exploit is only intended for boards that have been keyrolled. e.g. nissa, corsola, dedede.
+
+## Will badapple work for me?
+
+If you don't have disk layout v3(boards made after 2021), you cant do this exploit because you have no internet recovery option because disk layout v2 and below has no miniOS.
 
 ## how to do badapple
-1. enter developer mode with ESC+REFRESH+POWER and CTRL+D
-2. when you reach the block screen, press ESC+REFRESH+POWER again
-3. select Internet Recovery
-4. when miniOS loads in, press CTRL+ALT+F3(open the VT3)
-5. you now have a shell you can type shit in ykyk
+* Enter developer mode with ESC+REFRESH+POWER and CTRL+D
+* When you reach dev mode block screen, press ESC+REFRESH+POWER again
+* Select internet recovery
+* when miniOS loads in, press CTRL+ALT+F3 (to open the VT3)
+* You now have a shell you can type commands in
 
-## why does this stupid exploit so ez work
-because when you enter developer mode, cros_debug is flipped to 1 in crossystem's logic \
+## why does this stupid exploit work?
+
+Because when you enter developer mode, cros_debug is flipped to 1 in crossystem's logic \
 now the devs forgot that the recovery initramfs should always be trusted, whether in developer mode or not \
 so they just put code in miniOS where if cros_debug == 1, open a shell in the VT3 \
 because of googles oversight, we have a shell in the VT3 whilst enrolled. \
